@@ -18,8 +18,8 @@ var w = c.width = window.innerWidth,
         starAddedLife: 10,
 
         ellipseTilt: -.3,
-        ellipseBaseRadius: 150,
-        ellipseAddedRadius: 40,
+        ellipseBaseRadius: 400,
+        ellipseAddedRadius: 120,
         ellipseAxisMultiplierX: 2,
         ellipseAxisMultiplierY: 1,
         ellipseCX: w / 2,
@@ -69,8 +69,12 @@ function step() {
     if (stars.length < opts.starCount)
         stars.push(new Star);
 
-    lines.map(function (line) { line.step(); });
-    stars.map(function (star) { star.step(); });
+    lines.map(function (line) {
+        line.step();
+    });
+    stars.map(function (star) {
+        star.step();
+    });
 }
 
 function draw() {
@@ -85,8 +89,12 @@ function draw() {
     //ctx.rotate( opts.ellipseTilt );
     //ctx.scale( opts.ellipseAxisMultiplierX, opts.ellipseAxisMultiplierY );
 
-    lines.map(function (line) { line.draw(); });
-    stars.map(function (star) { star.draw(); });
+    lines.map(function (line) {
+        line.draw();
+    });
+    stars.map(function (star) {
+        star.draw();
+    });
 
     //ctx.scale( 1/opts.ellipseAxisMultiplierX, 1/opts.ellipseAxisMultiplierY );
     //ctx.rotate( -opts.ellipseTilt );
@@ -142,6 +150,7 @@ Line.prototype.draw = function () {
     ctx.stroke();
 }
 
-function Star() { }; Star.prototype.step = Star.prototype.draw = function () { };
+function Star() {};
+Star.prototype.step = Star.prototype.draw = function () {};
 
 init();

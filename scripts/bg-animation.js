@@ -146,6 +146,16 @@
             }
         });
     }
+    
+    var red = 156;
+    var green = 217;
+    var blue = 249;
+
+    document.addEventListener("click", function(){
+        red = Math.floor(Math.random() * (+255 - +0)) + +0;
+        green = Math.floor(Math.random() * (+255 - +0)) + +0; 
+        blue = Math.floor(Math.random() * (+255 - +0)) + +0;
+    });
 
     // Canvas manipulation
     function drawLines(p) {
@@ -154,7 +164,7 @@
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = 'rgba(156,217,249,' + p.active + ')';
+            ctx.strokeStyle = 'rgba(' + red + ',' + green + ',' + blue + ','  + p.active + ')';
             ctx.stroke();
         }
     }
