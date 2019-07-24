@@ -1,0 +1,167 @@
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+}
+
+.demo .large-header {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper { 
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #F9F1E9;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66%;
+    height: 100%;
+}
+
+.info { 
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 66%;
+}
+
+.sub-title { 
+   user-select: none;
+   font-size: 1.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}  
+
+@media only screen and (max-width: 768px) {
+   .main-title {
+      font-size: 3em;
+   }
+}
+
+.btn {		
+    padding: 1.4rem;
+    font-size: 1.4rem;
+    color: #fbfbfb;
+    letter-spacing: 1.1rem;
+    text-transform: uppercase;
+    transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid white;
+    font-family: 'arial';
+    width: 550px;
+    box-sizing: border-box;
+}
+
+.btn:hover { 
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.social { 
+    width: 550px;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+svg { 
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+    fill: white;
+    padding: 5px;
+}
+
+svg:hover { 
+    cursor: pointer;
+}
+
+.facebook:hover { 
+    fill: #4172B8;
+    border: 1px solid #4172B8;
+}
+
+.instagram:hover { 
+    fill: #E4405F;
+    border: 1px solid #E4405F;
+}
+
+.soundcloud:hover { 
+    fill: #FF3300;
+    border: 1px solid #FF3300;
+}
+
+.spotify:hover { 
+    fill: #1ED760;
+    border: 1px solid #1ED760;
+}
+
+.stackOverflow:hover { 
+    fill: #FE7A16;
+    border: 1px solid #FE7A16;
+}
+
+.twitter:hover { 
+    fill: #1DA1F2;
+    border: 1px solid #1DA1F2;
+}
+
+.youtube:hover { 
+    fill: #FF0000;
+    border: 1px solid #FF0000;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1.0rem;
+    color: #fbfbfb;
+    justify-content: center;
+    letter-spacing: 0.1rem;
+    user-select: none;
+}
+
+.heart { 
+    width: 20px;
+    margin-left: 5px;
+}
