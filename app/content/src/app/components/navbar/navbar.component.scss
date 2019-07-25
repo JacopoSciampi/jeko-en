@@ -1,8 +1,6 @@
 @import '../../../palette.scss';
 
 .container-web { 
-    --def: #20A4F3; 	
-	--inv: #F9F1E9;
     width: 100%;
     height: 50px;
     display: flex;
@@ -20,7 +18,7 @@
     box-sizing: border-box;
     padding: 5px 15px;
     font-size: 1em;
-    color: var(--inv);
+    color: $white;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -36,7 +34,7 @@
 }
 
 .btn:hover {
-	color: var(--def);
+	color: $red;
 	transition-delay: .6s;
 }
 
@@ -45,7 +43,7 @@
 }
 
 .btn:hover:after {
-	background: var(--inv);
+	background:$white;
 	transition-delay: .4s;
 }
 
@@ -54,7 +52,7 @@
 	left: 50%;
 	height: 100%;
 	width: 0;
-	border: 1px solid var(--inv);
+	border: 1px solid $white;
 	border-left: 0;
 	border-right: 0;
 }
@@ -64,7 +62,7 @@
 	left: 0;
 	height: 0;
 	width: 100%;
-	background: var(--inv);
+	background: $white;
 }
 
 .from-middle:hover:before {
