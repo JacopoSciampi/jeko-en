@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jacopo Sciampi</title>
+    <base href="./">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body style="margin: 0; background-color: rgb(25, 25, 25);">
+    <app-root style="position: absolute; left: 0; right: 0; width: 100%; height: 100vh; margin: 0"></app-root>
+    <canvas id="c" style="position: absolute; top: 0; left: 0;"></canvas>
+</body>
+<script type="text/javascript" src="https://jacoposciampi.com/utils/scripts/circles.js"></script>
+
+</html>
+
+<script>
+    window.addEventListener("resize", onResize);
+
+    function onResize() {
+        document.getElementById('c').style.height = window.innerHeight + 'px';
+        document.getElementById('c').style.width = window.innerWidth + 'px';
+    };
+</script>
