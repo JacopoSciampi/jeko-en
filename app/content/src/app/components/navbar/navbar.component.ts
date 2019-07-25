@@ -9,9 +9,14 @@ import { NavigationService } from 'src/app/shared/components/service/navigation.
 })
 export class NavbarComponent {
     @Input() isWebView: boolean;
+
     constructor(
         private navigationService: NavigationService
     ) { }
+
+    public backToHomepage(): void {
+        location.href = "https://www.jacoposciampi.com";
+    }
 
     public navigateTo(url: string): void {
         this.navigationService.setNavigation(url);
