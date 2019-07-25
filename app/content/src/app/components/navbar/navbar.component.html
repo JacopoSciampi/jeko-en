@@ -1,0 +1,19 @@
+<ng-container *ngIf="isWebView">
+    <div class="container-web">
+        <div class="btn from-middle" (click)="navigateTo('dashboard')">
+            Homepage
+        </div>
+        <div class="btn from-middle" (click)="navigateTo('download')">
+            Download
+        </div>
+        <div class="btn from-middle" (click)="navigateTo('media')">
+            Media
+        </div>
+        <div class="btn from-middle" (click)="navigateTo('links')">
+            Links
+        </div>
+        <div class="btn from-middle" (click)="navigateTo('contacts')">
+            Contacts
+        </div>
+    </div>
+</ng-container>
