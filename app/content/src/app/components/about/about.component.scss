@@ -11,14 +11,18 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  background-color: $dark-trasparent;
+  box-sizing: border-box;
+  padding: 0px 10px 10px 10px;
 }
 
 .main {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3.3em;
   text-transform: uppercase;
   color: $red;
+  font-family: 'Blinker';
 }
 
 .sub-title { 
@@ -26,6 +30,7 @@
     text-align: center;
     margin-top: -25px;
     margin-bottom: 30px;
+    font-family: 'OpenSans';
 }
 
 .paragraph {
@@ -44,6 +49,7 @@
             width: 250px;
             height: 250px;
             border-radius: 50%;
+            border: 2px solid white;
         }
     }
 
@@ -54,11 +60,13 @@
         .p-title { 
             font-size: 2em;
             color: $red;
+            font-family: 'Blinker';
         }
 
         .p-section { 
             margin-bottom: 5px;
             text-align: justify;
+            font-family: 'OpenSans';
         }
     }
 }
@@ -91,17 +99,12 @@
     }
 }
 
-.footer { 
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    font-size: 1.0rem;
-    color: #fbfbfb;
-    justify-content: center;
-    user-select: none;
+svg {
+    display: inline-block;
+    top: 0;
     left: 0;
-    font-family: 'NewYork';
-}
+  }
+  .wave {
+    height: 150px;
+    overflow: hidden;
+  }

@@ -8,15 +8,22 @@
 }
 
 @font-face {
-  font-family: 'prof';
-  src: url('./fonts/prof.ttf');
+  font-family: 'NewYork';
+  src: url('./fonts/NewYorkRegular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NewYork';
-  src: url('./fonts/NewYorkRegular.ttf');
+  font-family: 'Blinker';
+  src: url('./fonts/Blinker.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./fonts/OpenSans.ttf');
   font-weight: normal;
   font-style: normal;
 }
