@@ -1,0 +1,17 @@
+@import '../../../palette.scss';
+
+.container {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 0px;
+  //   font-family: 'prof';
+  color: $white;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  margin-bottom: 15px;
+}

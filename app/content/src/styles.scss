@@ -1,11 +1,18 @@
 @font-face {
-    font-family: 'pretty';
-    src: url('./fonts/pretty.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'pretty';
+  src: url('./fonts/pretty.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'prof';
+  src: url('./fonts/prof.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html,
-body { 
-    font-family: 'pretty';
+body {
+  font-family: 'pretty';
 }

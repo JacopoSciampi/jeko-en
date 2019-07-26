@@ -1,8 +1,9 @@
 <ng-container *ngIf="isWebView">
-    <div class="wrapper">
-        <div class="container">
-            <app-navbar [isWebView]="isWebView"></app-navbar>
-            <div class="web-hz-spacer"></div>
-        </div>
+  <div class="wrapper">
+    <div class="container">
+      <app-navbar [isWebView]="isWebView"></app-navbar>
+      <div class="web-hz-spacer"></div>
+      <app-about [isWebView]="isWebView"></app-about>
     </div>
+  </div>
 </ng-container>

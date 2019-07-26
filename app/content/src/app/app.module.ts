@@ -8,10 +8,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { DashboardComponent } from './shared/components/dashboard/dashboard.component';
 
 import { NavigationService } from './shared/components/service/navigation.service';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        AboutComponent,
         NavbarComponent,
         DashboardComponent
     ],
