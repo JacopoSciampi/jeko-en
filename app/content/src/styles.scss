@@ -1,3 +1,5 @@
+@import './palette.scss';
+
 @font-face {
   font-family: 'pretty';
   src: url('./fonts/pretty.ttf');
@@ -22,4 +24,73 @@
 html,
 body {
   font-family: 'pretty';
+}
+
+/* CUSTOM BUTTON */
+
+
+.btn {		
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    font-size: 1em;
+    color: $white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: $standard-translation;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: $red;
+	transition-delay: .2s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background:$white;
+	transition-delay: .2s;
+}
+
+.from-middle:before {
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 1px solid $white;
+	border-left: 0;
+	border-right: 0;
+}
+
+.from-middle:after {
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	background: $white;
+}
+
+.from-middle:hover:before {
+	left: 0;
+	width: 100%;
+}
+
+.from-middle:hover:after {
+	top: 0;
+	height: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
 }

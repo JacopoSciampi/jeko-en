@@ -10,6 +10,7 @@
   user-select: none;
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 .main {
@@ -17,6 +18,7 @@
   text-align: center;
   font-size: 2.5em;
   text-transform: uppercase;
+  color: $red;
 }
 
 .sub-title { 
@@ -32,6 +34,7 @@
 
 .section { 
     display: flex;
+    align-items: center;
 
     .image{
         width: 250px;
@@ -50,6 +53,7 @@
 
         .p-title { 
             font-size: 2em;
+            color: $red;
         }
 
         .p-section { 
@@ -60,7 +64,44 @@
 }
 
 .web-hz-spacer{
-    width: 100%;
+    margin-left: 34%;
+    width: 66%;
     height: 1px;
     background-color: $white-trasparent;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button { 
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    background-color: none;
+    transition: $standard-translation;
+    cursor: pointer;
+    border:1px solid $white;
+    margin-top: 10px;
+
+    &:hover { 
+        background-color: $red;
+        border: 1px solid $red;
+    }
+}
+
+.footer { 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 1.0rem;
+    color: #fbfbfb;
+    justify-content: center;
+    user-select: none;
+    left: 0;
+    font-family: 'NewYork';
 }
